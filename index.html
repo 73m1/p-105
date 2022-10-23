@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <script src="main.js"></script>
+   <link rel="stylesheet" href="style.css">
+    <title>Recognito</title>
+</head>
+<body>
+    <center>
+       <b>
+        <h1 id="title">Recognito</h1>
+       </b>
+       <hr>
+       <br>
+       <b>
+        <h2>These are all human faces trained into the AI</h2>
+        <hr>
+        <h3 class="btn btn-success people">Jemuel/me</h3>
+        <hr>
+        <h3 class="btn btn-primary people">Mum</h3>
+        <hr>
+        <h3 class="btn btn-warning people">Dad</h3>
+        <hr>
+        <h3 class="btn btn-danger people">Brother</h3>
+        <hr>
+       </b>
+<span>
+    <b><h2>Your Webcam</h2></b>
+</span>
+<div id="camera"></div>
+<hr>
+<span>
+    <button onclick="capture()" id="capt" class="btn btn-success">Capture Image</button>
+    <button onclick="indentify()" id="ident" class="btn btn-info">Identify Image</button>
+</span>
+<hr>
+<b><h2>Final Image</h2></b>
+<span>
+    <div id="final_img" class="final_img_holder"></div>
+</span>
+
+<p style="font-size: 22px;">Person's Face : <span id="result_person_name"></span> </p>
+<p style="font-size: 22px;">Accuracy : <span id="result_person_accuracy"></span> </p>
+       
+    </center>
+    <br>
+    <br>
+    <br>
+</body>
+</html>

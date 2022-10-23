@@ -1,0 +1,11 @@
+.people {
+    font-size:20px;
+}
+div {
+    border-style: double;
+    width: 600px;
+    height: 400px;
+}
+body {
+    background-image: linear-gradient(to bottom, darksalmon,purple);
+}
